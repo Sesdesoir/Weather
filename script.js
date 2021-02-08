@@ -28,7 +28,7 @@ function getWeather(event){
     var latitude;
     var longitude;
     searchEntry = this.textContent;
-    fetch("http://api.openweathermap.org/data/2.5/weather?q="+ searchEntry +"&mode=json&units=imperial&appid=2616b5aba9cde5c3435e1b66d6740d72").then(function(response){
+    fetch("https://api.openweathermap.org/data/2.5/weather?q="+ searchEntry +"&mode=json&units=imperial&appid=2616b5aba9cde5c3435e1b66d6740d72").then(function(response){
         if(response.ok){
             response.json().then(function(apiData){
             console.log(apiData);
@@ -113,7 +113,7 @@ function getWeather(event){
     })
     });
     histoyDiv.appendChild(previousSearches);              
-    fetch("http://api.openweathermap.org/data/2.5/weather?q="+ searchEntry +"&mode=json&units=imperial&appid=2616b5aba9cde5c3435e1b66d6740d72").then(function(response){
+    fetch("https://api.openweathermap.org/data/2.5/weather?q="+ searchEntry +"&mode=json&units=imperial&appid=2616b5aba9cde5c3435e1b66d6740d72").then(function(response){
         if(response.ok){
             response.json().then(function(apiData){
             console.log(apiData);
