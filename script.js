@@ -27,6 +27,7 @@ function getWeather(event){
     localStorage.setItem("City", document.getElementById("search-entry").value );
     var previousSearches = document.createElement("button");
     previousSearches.classList.add("previousSearch");
+    previousSearches.textContent = document.getElementById("search-entry").value;
     histoyDiv.appendChild(previousSearches);              
     fetch("http://api.openweathermap.org/data/2.5/weather?q="+ searchEntry +"&mode=json&units=imperial&appid=2616b5aba9cde5c3435e1b66d6740d72").then(function(response){
         if(response.ok){
