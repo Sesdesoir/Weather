@@ -1,0 +1,38 @@
+#search {
+    background-color: rgb(28, 118, 196);
+}
+
+#future-div{
+    text-align: center;
+    background-color: beige;
+}
+
+.container{
+    margin-left: 0;
+}
+#forecastDiv{
+    padding-left: 0;
+}
+.city{
+    float: left;
+}
+
+.previousSearch{
+    display:block;
+}
+
+.lowRisk{
+    background-color: greenyellow;
+}
+.moderateRisk{
+    background-color: yellow;
+}
+.highRisk{
+    background-color: rgb(255, 115, 0);
+}
+.extremeRisk{
+    background-color: red;
+}
+.cardtop{
+    display: inline-block;
+}
